@@ -1,7 +1,9 @@
-<h1><%= @person.Name %></h1>
-
-<div><%= @person.Age %></div>
-
-<%= link_to "Edit Details", edit_person_path(@person) %>
-
-&nbsp&nbsp<%= link_to "Delete Details", person_path(@person), method: :delete, data: {confirm: "Are you sure ?"} %>
+<br>
+<br>
+<br>
+<div style="width:95%;margin: 0 auto;">
+<span>Name: <h4 style="display: inherit;"><%= @person.Name %></h5></span><br>
+<span>Age: <p style="display: inherit;"><%= @person.Age %></p></span><br><br>
+<%= link_to "Edit Details", edit_person_path(@person) %> &nbsp&nbsp
+<%= link_to "Delete Details", person_path(@person), method: :delete, data: {confirm: "Are you sure ?"} %>
+</div>
