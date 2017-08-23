@@ -1,3 +1,7 @@
 <h1><%= @person.Name %></h1>
 
 <div><%= @person.Age %></div>
+
+<%= link_to "Edit Details", edit_person_path(@person) %>
+
+&nbsp&nbsp<%= link_to "Delete Details", person_path(@person), method: :delete, data: {confirm: "Are you sure ?"} %>
